@@ -13,11 +13,13 @@
  * limitations under the License.
  */
 
-#import "GMUGeometryRenderer.h"
+#import "GQTPoint.h"
 
-/* Extensions for testing purposes only. */
-@interface GMUGeometryRenderer (Testing)
+typedef struct {
+  double minX;
+  double minY;
+  double maxX;
+  double maxY;
+} GQTBounds;
 
-- (NSArray<GMSOverlay *> *)mapOverlays;
 
-@end

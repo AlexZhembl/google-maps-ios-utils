@@ -13,27 +13,8 @@
  * limitations under the License.
  */
 
-#import "GMUPlacemark.h"
+typedef struct {
+  double x;
+  double y;
+} GQTPoint;
 
-@implementation GMUPlacemark
-
-@synthesize geometry = _geometry;
-
-@synthesize style = _style;
-
-- (instancetype)initWithGeometry:(id<GMUGeometry>)geometry
-                           title:(NSString *)title
-                         snippet:(NSString *)snippet
-                           style:(GMUStyle *)style
-                        styleUrl:(NSString *)styleUrl {
-  if (self = [super init]) {
-    _geometry = geometry;
-    _title = [title copy];
-    _snippet = [snippet copy];
-    _style = style;
-    _styleUrl = [styleUrl copy];
-  }
-  return self;
-}
-
-@end

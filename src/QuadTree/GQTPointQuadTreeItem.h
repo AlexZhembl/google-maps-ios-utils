@@ -13,18 +13,12 @@
  * limitations under the License.
  */
 
-#import "GMUPoint.h"
+#import <Foundation/Foundation.h>
+#import "GQTPoint.h"
 
-@implementation GMUPoint
+@protocol GQTPointQuadTreeItem<NSObject>
 
-@synthesize type = _type;
-
-- (instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate {
-  if (self = [super init]) {
-    _type = @"Point";
-    _coordinate = coordinate;
-  }
-  return self;
-}
+- (GQTPoint)point;
 
 @end
+
