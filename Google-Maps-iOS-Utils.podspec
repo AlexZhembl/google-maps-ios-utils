@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GoogleMapsiOSUtils"
-  s.version      = "2.2.6"
+  s.version      = "2.2.7"
   s.summary      = "A utilities library for use with Google Maps SDK for iOS."
   s.description  = <<-DESC
                    This library contains classes that are useful for a wide range of applications
